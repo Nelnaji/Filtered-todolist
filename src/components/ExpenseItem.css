@@ -15,13 +15,12 @@
 .expense-item {
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: 1rem;
   padding: 1rem 2rem;
 
   background-color: var(--eerie-black);
-  border-radius: 1rem;
   justify-content: space-between;
-  margin: 1rem 0;
+  margin: 2rem 0;
   margin-inline: 5%;
 }
 
@@ -37,10 +36,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--blue-crayola);
+  background-color: var(--quick-silver);
   height: 3rem;
   width: 6rem;
-  border-radius: 0.5rem;
+
+  font-size: 1.3rem;
 }
 
 .expense-date {
@@ -50,7 +50,7 @@
   justify-content: center;
   height: 8rem;
   width: 10rem;
-  border-radius: 0.5rem;
+  border-radius: 0.5em;
   background-color: var(--quick-silver);
 }
 .expense-date__day {

@@ -5,7 +5,6 @@ const ExpenseForm = ({ onSaveExpenseData }) => {
   const [enteredTitle, setEnteredTitle] = useState("");
   const [enteredAmount, setEnteredAmount] = useState("");
   const [enteredDate, setEnteredDate] = useState("");
-
   const titleChangeHandler = (event) => {
     setEnteredTitle(event.target.value);
   };
@@ -31,8 +30,9 @@ const ExpenseForm = ({ onSaveExpenseData }) => {
     setEnteredDate("");
   };
 
+  const cancelExpense = (event) => {};
+
   return (
-    // button inside a form with the submit type antomaticalle send data to the server
     <form onSubmit={submitHandler}>
       <div className="new-expense__controls">
         <div className="new-expense__control">
@@ -64,6 +64,7 @@ const ExpenseForm = ({ onSaveExpenseData }) => {
         </div>
       </div>
       <div className="new-expensse__actions">
+        <button onClick={cancelExpense}>Cancel</button>
         <button type="submit">Add expense</button>
       </div>
     </form>
